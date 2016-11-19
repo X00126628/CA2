@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+        <!-- Bootstrap Core CSS -->
+    <link href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")" rel="stylesheet">
+
+        <!-- Custom CSS -->
+
+    <link href="@routes.Assets.versioned("stylesheets/simple-sidebar.css")" rel="stylesheet">
+    <link href="@routes.Assets.versioned("stylesheets/search.css")" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <div class="row">
+		<div class="col-md-12">
+        <div class="search">
+<input type="text" class="form-control input-sm" maxlength="64" placeholder="Search" />
+ <button type="submit" class="btn-primary">Search</button>
+</div>
+	</div>
+	</div>
+                </li>
+                <li>
+                    <a href="@routes.HomeController.index()">Home</a>
+                </li>
+                <li>
+                    <a href="@routes.HomeController.products()">Products</a>
+                </li>
+                <li>
+                    <a href="@routes.HomeController.services()">Services</a>
+                </li>
+                <li>
+                    <a href="@routes.HomeController.shopping_cart()">Shopping cart</a>
+                </li>
+                <li>
+                    <a href="@routes.HomeController.about()">About</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>SHOPPING CART</h1>
+                        <p>Website project for Luke Tudor and Daniella, we didnt steal a template i promise. Shopping cart page.</p>
+                        
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		
+
+        <!-- /#page-content-wrapper -->
+		<a class="btn btn-default" target="_blank" a href="@routes.HomeController.index()">backi to shop</a>
+		<button type="confirmorder" class="btn btn-default">Confirm Order</button>
+		<button type="clearcart" class="btn btn-default">Clear Cart</button>
+    </div>
+    <!-- /#wrapper -->
+
+        <!-- jQuery -->
+    <script src="@routes.Assets.versioned("javascripts/jquery.js")" ></script>
+
+
+        <!-- Bootstrap Core JavaScript -->
+    <script src="@routes.Assets.versioned("javascripts/bootstrap.min.js")" ></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
