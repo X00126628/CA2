@@ -58,7 +58,9 @@
                 <li>
                     <a href="@routes.HomeController.about()">About</a>
                 </li>
-                
+                <li>
+                    <a href="@routes.HomeController.login()">Login</a>
+                </li>
             </ul>
         </div>
 
@@ -247,11 +249,12 @@
     </div>
     <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+        !-- jQuery -->
+    <script src="@routes.Assets.versioned("javascripts/jquery.js")" ></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+    <script src="@routes.Assets.versioned("javascripts/bootstrap.min.js")" ></script>
 
 </body>
 

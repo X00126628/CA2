@@ -11,6 +11,7 @@ GET     /page3                           controllers.HomeController.page3
 GET     /products                        controllers.HomeController.products
 GET     /services                        controllers.HomeController.services
 GET     /shopping_cart              controllers.HomeController.shopping_cart
+GET     /login                           controllers.HomeController.login
 
 
 # An example controller showing how to use dependency injection

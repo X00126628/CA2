@@ -47,4 +47,8 @@ public class HomeController extends Controller {
     public Result shopping_cart() {
         return ok(shopping_cart.render());
     }
+
+    public Result login() {
+        return ok(login.render());
+    }
 }
